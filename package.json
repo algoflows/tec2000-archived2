@@ -9,7 +9,7 @@
   },
   "private": true,
   "dependencies": {
-    "@nrwl/next": "14.8.2",
+    "@nrwl/next": "15.0.0",
     "core-js": "^3.6.5",
     "next": "12.3.1",
     "react": "18.2.0",
@@ -20,16 +20,16 @@
   "devDependencies": {
     "@babel/core": "7.12.13",
     "@babel/preset-typescript": "7.12.13",
-    "@nrwl/cli": "14.8.2",
-    "@nrwl/cypress": "14.8.2",
-    "@nrwl/eslint-plugin-nx": "14.8.2",
-    "@nrwl/jest": "14.8.2",
-    "@nrwl/linter": "14.8.2",
-    "@nrwl/nx-cloud": "^14.7.0",
-    "@nrwl/react": "14.8.2",
-    "@nrwl/storybook": "14.8.2",
-    "@nrwl/web": "14.8.2",
-    "@nrwl/workspace": "14.8.2",
+    "@nrwl/cli": "15.0.0",
+    "@nrwl/cypress": "15.0.0",
+    "@nrwl/eslint-plugin-nx": "15.0.0",
+    "@nrwl/jest": "15.0.0",
+    "@nrwl/linter": "15.0.0",
+    "@nrwl/nx-cloud": "14.7.0",
+    "@nrwl/react": "15.0.0",
+    "@nrwl/storybook": "15.0.0",
+    "@nrwl/web": "15.0.0",
+    "@nrwl/workspace": "15.0.0",
     "@storybook/addon-essentials": "~6.5.9",
     "@storybook/builder-vite": "^0.2.3",
     "@storybook/builder-webpack5": "~6.5.9",
@@ -58,7 +58,7 @@
     "eslint-plugin-react-hooks": "4.6.0",
     "jest": "28.1.1",
     "jest-environment-jsdom": "28.1.1",
-    "nx": "14.8.2",
+    "nx": "15.0.0",
     "postcss": "^8.4.17",
     "prettier": "^2.6.2",
     "react-test-renderer": "18.2.0",
@@ -71,3 +71,4 @@
     "vite": "^3.1.4"
   }
 }
+

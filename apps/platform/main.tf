@@ -31,11 +31,14 @@ terraform {
       version = ">= 2.1.0"
     }
 
+    cockroachdb = {
+      source = "cockroachdb/cockroachdb"
+    }
   }
 }
 
 # Providers
-provider namecheap {
+provider "namecheap" {
   api_key  = var.namecheap_api_key
   username = var.namecheap_username
   api_user = var.namecheap_username

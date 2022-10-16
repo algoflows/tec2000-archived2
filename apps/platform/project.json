@@ -1,0 +1,26 @@
+{
+  "name": "platform",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/platform",
+  "projectType": "application",
+  "targets": {
+    "init": {},
+    "configurations": {
+      "development": {
+        "outputPath": "apps/next-web"
+      },
+      "production": {}
+    }
+  },
+  "plan": {
+    "executor": "@nrwl/next:server",
+    "defaultConfiguration": "development",
+    "options": {
+      "buildTarget": "next-web:build",
+      "dev": true
+    }
+  },
+  "apply": {},
+  "test": {},
+  "tags": []
+}
