@@ -12,7 +12,7 @@ resource "vercel_project" "example" {
 
   git_repository = {
     type = "github"
-    repo = "algoflows/tec2000"
+    repo = "algoflows/tec2000.com"
   }
 
   ignore_command = "npx nx-ignore web"
