@@ -31,19 +31,10 @@ terraform {
       version = ">= 2.1.0"
     }
 
-
-    fauna = {
-      source  = "chronark/fauna"
-      version = "0.5.3"
-    }
   }
 }
 
 # Providers
-provider fauna {
-  fauna_key = var.fauna_key
-}
-
 provider namecheap {
   api_key  = var.namecheap_api_key
   username = var.namecheap_username
@@ -80,6 +71,4 @@ module "vercel" {
   project_name = var.project_name
 }
 
-module "fauna" {
-  source = "./modules/fauna"
-}
+
