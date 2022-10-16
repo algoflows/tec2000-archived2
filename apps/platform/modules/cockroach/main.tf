@@ -12,8 +12,8 @@ resource "cockroach_cluster" "cockroach" {
   wait_for_cluster_ready = true
   create_spec = {
     serverless = {
-      regions     = ["europe-west1", "europe-west2", "europe-west3"]
-      spend_limit = 10.00 // 10 USD
+      regions     = ["europe-west1", "europe-west2"]
+      spend_limit = 1000 #10 USD
     }
   }
 }
