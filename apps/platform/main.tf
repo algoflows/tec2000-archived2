@@ -32,7 +32,8 @@ terraform {
     }
 
     cockroachdb = {
-      source = "cockroachdb/cockroachdb"
+      source  = "cockroachdb/cockroachdb"
+      version = ">= 0.1.0"
     }
   }
 }
@@ -61,6 +62,11 @@ provider "commercetools" {
   token_url     = "https://auth.europe-west1.gcp.commercetools.com"
 }
 
+provider "cockroachdb" {
+  name              = "terraform"
+  COCKROACH_API_KEY = var.cockroachdb_api_key
+}
+
 provider "auth0" {
   domain        = var.auth0_domain
   client_id     = var.auth0_client_id
@@ -71,6 +77,11 @@ provider "auth0" {
 # Modules
 module "vercel" {
   source       = "./modules/vercel"
+  project_name = var.project_name
+}
+
+module "cockroachdb" {
+  source       = "./modules/cockroachdb"
   project_name = var.project_name
 }
 
