@@ -1,3 +1,5 @@
+# Testing deployment
+
 terraform {
   required_providers {
     vercel = {
@@ -25,9 +27,9 @@ resource "vercel_project_domain" "domain" {
 }
 
 resource "vercel_deployment" "deployment" {
-  project_id       = vercel_project.example.id
-  production       = false
-  ref              = "dev"
+  project_id = vercel_project.example.id
+  production = false
+  ref        = "dev"
   project_settings = {
     build_command    = "npx nx build next-web --prod"
     output_directory = "./dist/apps/next-web/.next"
