@@ -10,7 +10,7 @@ variable "ci_context" {
   default     = "dev"
 }
 
-variable "cockroachdb_api_key" {
+variable "cockroach_api_key" {
   type        = string
   description = "The CockroachDB API key"
 }

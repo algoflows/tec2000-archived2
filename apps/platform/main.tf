@@ -62,7 +62,7 @@ provider "commercetools" {
 }
 
 provider "cockroach" {
-  COCKROACH_API_KEY = var.cockroachdb_api_key
+  apikey = var.cockroach_api_key
 }
 
 provider "auth0" {
