@@ -8,6 +8,7 @@ export function Index() {
     <>
       <h1 className="bg-indigo-500 p-2 font-mono">Welcome next-web</h1>
       <p className="p-2">Lets talk about the future of web development</p>
+      <p className="p-2">Lets talk about the future of web development</p>
     </>
   );
 }

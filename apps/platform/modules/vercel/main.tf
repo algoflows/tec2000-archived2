@@ -9,6 +9,7 @@ terraform {
 }
 
 resource "vercel_project" "example" {
+  id        = "tec2000"
   name      = "tec2000"
   framework = "nextjs"
 
@@ -17,7 +18,7 @@ resource "vercel_project" "example" {
     repo = "algoflows/tec2000.com"
   }
 
-  ignore_command = "npx nx-ignore web"
+  ignore_command = "npx nx-ignore next-web"
 }
 
 resource "vercel_project_domain" "domain" {
