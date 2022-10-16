@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "opsap",
+  "npmScope": "tec2000",
   "affected": {
     "defaultBase": "main"
   },
@@ -15,7 +15,7 @@
           "e2e",
           "build-storybook"
         ],
-        "accessToken": "YWQ1MTE5N2EtZWE4NC00ZDA2LThlYmEtYTQ5NzdmYWMzYWFifHJlYWQtd3JpdGU="
+        "accessToken": "MDhiMWVlZWYtZDA3Yi00YzE1LThhMTUtMzIyMmFkNGZiYmUwfHJlYWQtd3JpdGU="
       }
     }
   },
