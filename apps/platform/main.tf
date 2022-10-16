@@ -31,9 +31,9 @@ terraform {
       version = ">= 2.1.0"
     }
 
-    # cockroachdb = {
-    #   source = "aybabtme/cockroach"
-    # }
+    cockroachdb = {
+      source = "aybabtme/cockroach"
+    }
   }
 }
 
@@ -78,9 +78,9 @@ module "vercel" {
   project_name = var.project_name
 }
 
-# module "cockroachdb" {
-#   source       = "./modules/cockroachdb"
-#   project_name = var.project_name
-# }
+module "cockroachdb" {
+  source       = "./modules/cockroachdb"
+  project_name = var.project_name
+}
 
 
