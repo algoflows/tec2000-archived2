@@ -1,5 +1,5 @@
 // apps/site/pages/topics.tsx
-import { TopicButton } from '@opsap/shared/ui';
+import { TopicButton } from '@tec2000/shared/ui';
 
 /* eslint-disable-next-line */
 export interface TopicsProps {}
