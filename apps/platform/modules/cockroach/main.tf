@@ -6,13 +6,16 @@ terraform {
   }
 }
 
+// Available GCP regions: https://cloud.google.com/compute/docs/regions-zones
+// Allowed [asia-southeast1, europe-west1, southamerica-east1, us-central1, us-east1, us-west2]",
+
 resource "cockroach_cluster" "prod" {
   name                   = "${var.project_name}-prod"
   cloud_provider         = var.cloud_provider
   wait_for_cluster_ready = true
   create_spec = {
     serverless = {
-      regions     = ["europe-west1", "europe-west2", "europe-west3"]
+      regions     = ["europe-west1", "us-central1", "us-east1", "us-west2", "asia-southeast1", "southamerica-east1"]
       spend_limit = 1000 #10 USD
     }
   }
@@ -24,7 +27,7 @@ resource "cockroach_cluster" "dev" {
   wait_for_cluster_ready = true
   create_spec = {
     serverless = {
-      regions     = ["europe-west2"]
+      regions     = ["europe-west1"]
       spend_limit = 1000 #10 USD
     }
   }
