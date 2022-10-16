@@ -63,7 +63,6 @@ provider "commercetools" {
 }
 
 provider "cockroachdb" {
-  name              = "terraform"
   COCKROACH_API_KEY = var.cockroachdb_api_key
 }
 
