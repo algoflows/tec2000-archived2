@@ -31,8 +31,8 @@ terraform {
       version = ">= 2.1.0"
     }
 
-    cockroachdb = {
-      source = "aybabtme/cockroach"
+    cockroach = {
+      source = "cockroachdb/cockroach"
     }
   }
 }
@@ -61,7 +61,7 @@ provider "commercetools" {
   token_url     = "https://auth.europe-west1.gcp.commercetools.com"
 }
 
-provider "cockroachdb" {
+provider "cockroach" {
   COCKROACH_API_KEY = var.cockroachdb_api_key
 }
 
@@ -78,8 +78,8 @@ module "vercel" {
   project_name = var.project_name
 }
 
-module "cockroachdb" {
-  source       = "./modules/cockroachdb"
+module "cockroach" {
+  source       = "./modules/cockroach"
   project_name = var.project_name
 }
 
