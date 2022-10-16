@@ -18,7 +18,7 @@ variable "sql_user_password" {
   type      = string
   nullable  = false
   sensitive = true
-  default   = "1234567890"
+  default   = "012345678910"
 }
 
 variable "serverless_spend_limit" {
