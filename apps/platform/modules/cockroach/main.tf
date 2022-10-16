@@ -30,13 +30,13 @@ resource "cockroach_cluster" "dev" {
   }
 }
 
-resource "cockroach_sql_user" "cockroach" {
+resource "cockroach_sql_user" "prod" {
   name     = var.sql_user_name
   password = var.sql_user_password
   id       = cockroach_cluster.prod.id
 }
 
-resource "cockroach_sql_user" "cockroach" {
+resource "cockroach_sql_user" "dev" {
   name     = var.sql_user_name
   password = var.sql_user_password
   id       = cockroach_cluster.dev.id
