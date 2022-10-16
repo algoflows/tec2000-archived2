@@ -32,7 +32,7 @@ terraform {
     }
 
     cockroachdb = {
-      source = "aybabtme/terraform-provider-cockroach"
+      source = "aybabtme/cockroach"
     }
   }
 }
