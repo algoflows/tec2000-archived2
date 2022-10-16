@@ -29,7 +29,7 @@ resource "vercel_deployment" "deployment" {
   production       = false
   ref              = "dev"
   project_settings = {
-    build_command    = "npx nx build web --prod"
+    build_command    = "npx nx build next-web --prod"
     output_directory = "./dist/apps/web/.next"
   }
 }
