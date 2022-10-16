@@ -32,8 +32,7 @@ terraform {
     }
 
     cockroachdb = {
-      source  = "cockroachdb/cockroachdb"
-      version = ">= 0.1.0"
+      source = "cockroachdb/cockroachdb"
     }
   }
 }
