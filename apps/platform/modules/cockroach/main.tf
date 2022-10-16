@@ -13,7 +13,7 @@ terraform {
 # Seperated the cluster and database resources to allow for more flexibility in the future
 
 resource "cockroach_cluster" "production" {
-  name                   = var.project_name
+  name                   = "${var.project_name}-production"
   cloud_provider         = var.cloud_provider
   wait_for_cluster_ready = true
   create_spec = {
@@ -25,7 +25,7 @@ resource "cockroach_cluster" "production" {
 }
 
 resource "cockroach_cluster" "development" {
-  name                   = "${var.project_name}-${var.ci_context}"
+  name                   = "${var.project_name}-development"
   cloud_provider         = var.cloud_provider
   wait_for_cluster_ready = true
   create_spec = {
